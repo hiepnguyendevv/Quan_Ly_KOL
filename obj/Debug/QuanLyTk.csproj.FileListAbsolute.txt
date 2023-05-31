@@ -1,0 +1,16 @@
+D:\Visual Studio\winform\QuanLyTk\bin\Debug\QuanLyTk.exe.config
+D:\Visual Studio\winform\QuanLyTk\bin\Debug\QuanLyTk.exe
+D:\Visual Studio\winform\QuanLyTk\bin\Debug\QuanLyTk.pdb
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.csproj.AssemblyReference.cache
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.Properties.Resources.resources
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.csproj.GenerateResource.cache
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.csproj.CoreCompileInputs.cache
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.exe
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.pdb
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.FormTT_KOL.resources
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.QL_KOL.resources
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.Booking.resources
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.QL_KH.resources
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.Home_QuanLy.resources
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.Home_KH.resources
+D:\Visual Studio\winform\QuanLyTk\obj\Debug\QuanLyTk.DangNhap.resources
