@@ -107,7 +107,7 @@ namespace QuanLyTk
             this.datagridViewKH.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.datagridViewKH.Location = new System.Drawing.Point(0, 201);
             this.datagridViewKH.Name = "datagridViewKH";
-            this.datagridViewKH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.datagridViewKH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagridViewKH.Size = new System.Drawing.Size(634, 218);
             this.datagridViewKH.TabIndex = 32;
             this.datagridViewKH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridViewKH_CellClick);

@@ -9,20 +9,39 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace QuanLyTk
 {
     public partial class FormTT_KOL : Form
     {
         //SqlCommand cmd;
         //SqlDataAdapter data;
+        public static FormTT_KOL instance;
+        public Label lbMa;
+        public Label lbTenKOL;
+        public Label lbGt;
+        public Label lbNs;
+        public Label lbDc;
+        public Label lbSoDt;
+        public Label lbCoc;
+        public DateTimePicker time;
         public FormTT_KOL()
         {
             InitializeComponent();
+            instance = this;
+            lbMa = lbKOL;
+            lbTenKOL = lbName;
+            lbGt = lbGioiTinh;
+            lbNs = lbNgaySinh;
+            lbDc = lbDiaChi;
+            lbSoDt = lbSdt;
+            lbCoc = lbGia;
+            time = date_lich;
         }
 
         private void FormTT_KOL_Load(object sender, EventArgs e)
         {
-            btnThanhToan.Enabled = false;
+            btnBooking.Enabled = false;
             check_XN.Checked = false;
         }
 
@@ -30,30 +49,22 @@ namespace QuanLyTk
         {
             if (check_XN.Checked)
             {
-                btnThanhToan.Enabled = true;
+                btnBooking.Enabled = true;
             }
             else
             {
-                btnThanhToan.Enabled = false;
+                btnBooking.Enabled = false;
             }
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        
+
+
+        private void btnBooking_Click(object sender, EventArgs e)
         {
-            //if(MessageBox.Show("Bạn xác nhận thanh toán?","Thông báo",MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
-            //{
-            //    SqlConnection conn = Connection.getConnection();
-            //    string query = "insert into ChiTietCongViec values(@MaKH,@MaKOL,@ThoiGian,@GiaCoc)";
-            //    conn.Open();
-            //    cmd = new SqlCommand(query, conn);
-
-            //    conn.Close();
-            //}
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            ThanhToan tt = new ThanhToan();
+            tt.ShowDialog();
         }
     }
 }

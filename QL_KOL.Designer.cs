@@ -59,6 +59,7 @@ namespace QuanLyTk
             this.dateTimeKOL = new System.Windows.Forms.DateTimePicker();
             this.txbGia = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.kOLBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_KOLDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kOLBindingSource)).BeginInit();
@@ -70,7 +71,7 @@ namespace QuanLyTk
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 21);
+            this.label1.Location = new System.Drawing.Point(43, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 21);
             this.label1.TabIndex = 0;
@@ -80,7 +81,7 @@ namespace QuanLyTk
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 63);
+            this.label2.Location = new System.Drawing.Point(43, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 1;
@@ -90,7 +91,7 @@ namespace QuanLyTk
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(43, 100);
+            this.label3.Location = new System.Drawing.Point(43, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 21);
             this.label3.TabIndex = 2;
@@ -100,7 +101,7 @@ namespace QuanLyTk
             // 
             this.radioMale.AutoSize = true;
             this.radioMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMale.Location = new System.Drawing.Point(142, 102);
+            this.radioMale.Location = new System.Drawing.Point(142, 91);
             this.radioMale.Name = "radioMale";
             this.radioMale.Size = new System.Drawing.Size(55, 20);
             this.radioMale.TabIndex = 3;
@@ -112,7 +113,7 @@ namespace QuanLyTk
             // 
             this.radioFmale.AutoSize = true;
             this.radioFmale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioFmale.Location = new System.Drawing.Point(210, 102);
+            this.radioFmale.Location = new System.Drawing.Point(210, 91);
             this.radioFmale.Name = "radioFmale";
             this.radioFmale.Size = new System.Drawing.Size(43, 20);
             this.radioFmale.TabIndex = 4;
@@ -124,7 +125,7 @@ namespace QuanLyTk
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(371, 21);
+            this.label4.Location = new System.Drawing.Point(395, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 21);
             this.label4.TabIndex = 6;
@@ -133,7 +134,7 @@ namespace QuanLyTk
             // txbID
             // 
             this.txbID.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbID.Location = new System.Drawing.Point(142, 22);
+            this.txbID.Location = new System.Drawing.Point(142, 11);
             this.txbID.Name = "txbID";
             this.txbID.Size = new System.Drawing.Size(169, 22);
             this.txbID.TabIndex = 7;
@@ -141,7 +142,7 @@ namespace QuanLyTk
             // txbName
             // 
             this.txbName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbName.Location = new System.Drawing.Point(142, 63);
+            this.txbName.Location = new System.Drawing.Point(142, 52);
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(169, 22);
             this.txbName.TabIndex = 8;
@@ -150,7 +151,7 @@ namespace QuanLyTk
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(371, 60);
+            this.label5.Location = new System.Drawing.Point(395, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 21);
             this.label5.TabIndex = 9;
@@ -160,7 +161,7 @@ namespace QuanLyTk
             // 
             this.cboDiaChi.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDiaChi.FormattingEnabled = true;
-            this.cboDiaChi.Location = new System.Drawing.Point(486, 64);
+            this.cboDiaChi.Location = new System.Drawing.Point(510, 52);
             this.cboDiaChi.Name = "cboDiaChi";
             this.cboDiaChi.Size = new System.Drawing.Size(165, 23);
             this.cboDiaChi.TabIndex = 10;
@@ -168,7 +169,7 @@ namespace QuanLyTk
             // txbSDT
             // 
             this.txbSDT.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSDT.Location = new System.Drawing.Point(486, 100);
+            this.txbSDT.Location = new System.Drawing.Point(510, 88);
             this.txbSDT.Name = "txbSDT";
             this.txbSDT.Size = new System.Drawing.Size(165, 22);
             this.txbSDT.TabIndex = 12;
@@ -177,7 +178,7 @@ namespace QuanLyTk
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(371, 100);
+            this.label6.Location = new System.Drawing.Point(395, 88);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 21);
             this.label6.TabIndex = 11;
@@ -206,7 +207,7 @@ namespace QuanLyTk
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(394, 181);
+            this.btnThem.Location = new System.Drawing.Point(398, 168);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(86, 25);
             this.btnThem.TabIndex = 14;
@@ -217,7 +218,7 @@ namespace QuanLyTk
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(486, 181);
+            this.btnSua.Location = new System.Drawing.Point(490, 168);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(92, 25);
             this.btnSua.TabIndex = 15;
@@ -228,9 +229,9 @@ namespace QuanLyTk
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(584, 183);
+            this.btnXoa.Location = new System.Drawing.Point(588, 168);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(87, 23);
+            this.btnXoa.Size = new System.Drawing.Size(87, 25);
             this.btnXoa.TabIndex = 16;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -243,7 +244,7 @@ namespace QuanLyTk
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Location = new System.Drawing.Point(50, 181);
+            this.btnTimKiem.Location = new System.Drawing.Point(46, 168);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(80, 25);
             this.btnTimKiem.TabIndex = 17;
@@ -253,7 +254,7 @@ namespace QuanLyTk
             // 
             // txbTimKiem
             // 
-            this.txbTimKiem.Location = new System.Drawing.Point(162, 183);
+            this.txbTimKiem.Location = new System.Drawing.Point(158, 170);
             this.txbTimKiem.Name = "txbTimKiem";
             this.txbTimKiem.Size = new System.Drawing.Size(181, 20);
             this.txbTimKiem.TabIndex = 18;
@@ -277,7 +278,7 @@ namespace QuanLyTk
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 221);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 233);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
@@ -290,7 +291,7 @@ namespace QuanLyTk
             // dateTimeKOL
             // 
             this.dateTimeKOL.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeKOL.Location = new System.Drawing.Point(505, 23);
+            this.dateTimeKOL.Location = new System.Drawing.Point(529, 11);
             this.dateTimeKOL.Name = "dateTimeKOL";
             this.dateTimeKOL.Size = new System.Drawing.Size(117, 20);
             this.dateTimeKOL.TabIndex = 19;
@@ -298,7 +299,7 @@ namespace QuanLyTk
             // txbGia
             // 
             this.txbGia.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbGia.Location = new System.Drawing.Point(142, 140);
+            this.txbGia.Location = new System.Drawing.Point(142, 129);
             this.txbGia.Name = "txbGia";
             this.txbGia.Size = new System.Drawing.Size(169, 22);
             this.txbGia.TabIndex = 21;
@@ -307,17 +308,29 @@ namespace QuanLyTk
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(43, 140);
+            this.label7.Location = new System.Drawing.Point(43, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 21);
             this.label7.TabIndex = 20;
             this.label7.Text = "Chọn giá";
             // 
+            // btnLoad
+            // 
+            this.btnLoad.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Location = new System.Drawing.Point(46, 202);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(80, 25);
+            this.btnLoad.TabIndex = 22;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
             // QL_KOL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 440);
+            this.ClientSize = new System.Drawing.Size(757, 452);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.txbGia);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimeKOL);
@@ -381,6 +394,7 @@ namespace QuanLyTk
         private System.Windows.Forms.DateTimePicker dateTimeKOL;
         private System.Windows.Forms.TextBox txbGia;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnLoad;
     }
 }
 

@@ -89,7 +89,7 @@ namespace QuanLyTk
             this.btnTrangChu.BackColor = System.Drawing.Color.DimGray;
             this.btnTrangChu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrangChu.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrangChu.ForeColor = System.Drawing.Color.White;
             this.btnTrangChu.Image = global::QuanLyTk.Properties.Resources.icons8_monitor_24;
             this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -97,7 +97,7 @@ namespace QuanLyTk
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Size = new System.Drawing.Size(199, 36);
             this.btnTrangChu.TabIndex = 0;
-            this.btnTrangChu.Text = "HOME";
+            this.btnTrangChu.Text = "Thoát";
             this.btnTrangChu.UseVisualStyleBackColor = false;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
@@ -162,7 +162,9 @@ namespace QuanLyTk
             this.Controls.Add(this.panel2);
             this.Name = "Home_QuanLy";
             this.Text = "Home";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Home_QuanLy_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Home_QuanLy_FormClosed);
+            this.Load += new System.EventHandler(this.Home_QuanLy_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

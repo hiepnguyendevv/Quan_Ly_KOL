@@ -37,10 +37,9 @@ namespace QuanLyTk
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Close();
-            }
+            this.Hide();
+            DangNhap dn = new DangNhap();
+            dn.ShowDialog();
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
@@ -63,17 +62,35 @@ namespace QuanLyTk
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new BaoCao());
         }
 
         private void Home_QuanLy_FormClosed(object sender, FormClosedEventArgs e)
         {
 
-            if (MessageBox.Show("Bạn có muốn rời khỏi", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+           
+            
+        }
+
+        private void Home_QuanLy_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Home_QuanLy_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn rời khỏi?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                this.Hide();
+
                 DangNhap dn = new DangNhap();
+                dn.Closed += (s, args) => this.Close();
                 dn.Show();
+            
+            }
+            else
+            {
+               
+                e.Cancel = true;
             }
         }
     }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -58,6 +64,24 @@
     </Compile>
     <Compile Include="Home_KH.Designer.cs">
       <DependentUpon>Home_KH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_KOL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_KOL.Designer.cs">
+      <DependentUpon>Home_KOL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HopDong.Designer.cs">
+      <DependentUpon>HopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KOL_Lich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KOL_Lich.Designer.cs">
+      <DependentUpon>KOL_Lich.cs</DependentUpon>
     </Compile>
     <Compile Include="QL_KOL.cs">
       <SubType>Form</SubType>
@@ -104,11 +128,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SinhVienDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TaiKhoan_KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan_KH.Designer.cs">
+      <DependentUpon>TaiKhoan_KH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.Designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home_KH.resx">
       <DependentUpon>Home_KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_KOL.resx">
+      <DependentUpon>Home_KOL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HopDong.resx">
+      <DependentUpon>HopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KOL_Lich.resx">
+      <DependentUpon>KOL_Lich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_KOL.resx">
       <DependentUpon>QL_KOL.cs</DependentUpon>
@@ -135,6 +183,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TaiKhoan_KH.resx">
+      <DependentUpon>TaiKhoan_KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToan.resx">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -217,6 +271,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-test-account-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\206684_visa_method_card_payment_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\206675_paypal_method_payment_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\206675_paypal_method_payment_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\206675_paypal_method_payment_icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

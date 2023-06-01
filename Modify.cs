@@ -186,12 +186,14 @@ namespace QuanLyTk
         }
         public bool deleteDataKH(string id)
         {
-            KOL kol = new KOL();
+
             SqlConnection conn = Connection.getConnection();
+            
             string query = "delete KH where MaKH = @MaKH";
+            
             try
             {
-                conn.Open();
+                
                 cmd = new SqlCommand(query, conn);
                 cmd.Parameters.Add("@MaKH", SqlDbType.VarChar).Value = id;
                 cmd.ExecuteNonQuery();

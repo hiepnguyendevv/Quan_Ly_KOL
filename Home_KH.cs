@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QuanLyTk
 {
     public partial class Home_KH : Form
     {
         public static Home_KH instance;
+        public Label lbMa;
+        public Label lbTen;
+
         public Home_KH()
         {
             InitializeComponent();
             instance = this;
+            lbMa = lbMaKH;
+            lbTen = lbTenKH;
         }
         Modify modify = new Modify();
 
@@ -52,17 +58,44 @@ namespace QuanLyTk
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new TaiKhoan_KH());
         }
 
         private void Home_KH_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if(MessageBox.Show("Bạn có muốn rời khỏi","Thông báo",MessageBoxButtons.YesNo) == DialogResult.Yes)
+
+        }
+
+
+
+
+
+        private void Home_KH_Load(object sender, EventArgs e)
+        {
+            SqlConnection conn = Connection.getConnection();
+
+            string tk = DangNhap.instance.txbDn.Text;
+
+            string query = "select KH.MaKH, KH.TenKH,.KH.DiaChi,KH.Sdt from TaiKhoan,KH where TaiKhoan.MaKH = KH.MaKH and TaiKhoan.TenTk='" + tk + "'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            using (SqlDataReader dr = cmd.ExecuteReader())
             {
-                this.Hide();
-                DangNhap dn = new DangNhap();
-                dn.Show();
+                if (dr.Read())
+                {
+                    lbMaKH.Text = dr["MaKH"].ToString();
+                    lbTenKH.Text = dr["TenKH"].ToString();
+                    lbDiaChi.Text = dr["DiaChi"].ToString();
+                    lbSDT.Text = dr["Sdt"].ToString();
+                }
             }
+            conn.Close();
+
+        }
+
+        private void lbMaKH_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void panel_body_Paint(object sender, PaintEventArgs e)
@@ -70,42 +103,31 @@ namespace QuanLyTk
 
         }
 
-        private void dataGird_TTKH_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnHopDong_Click(object sender, EventArgs e)
         {
-            
+            openChildForm(new HopDong());
         }
 
-        private void Home_KH_Load(object sender, EventArgs e)
+        private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            
-            string tk = DangNhap.instance.txbDn.Text;
-            
+            this.Hide();
+            DangNhap dn = new DangNhap();
+            dn.ShowDialog();
+        }
 
-            DataGridView dataGrid_TTKH = new DataGridView();
-            
-            dataGrid_TTKH.DataSource = modify.BindData("select KH.MaKH, KH.TenKH,.KH.DiaChi,KH.Sdt from TaiKhoan,KH where TaiKhoan.MaKH = KH.MaKH and TaiKhoan.TenTk='"+tk+"'");
-        
-            
-
-            //dataGrid_TTKH.Columns[0].Name = "MaKH";
-            //dataGrid_TTKH.Columns[1].Name = "TenKH";
-            //dataGrid_TTKH.Columns[2].Name = "DiaChi";
-            //dataGrid_TTKH.Columns[3].Name = "Sdt";
-
-            //dataGrid_TTKH.Columns[0].DataPropertyName = "MaKH";
-            //dataGrid_TTKH.Columns[1].DataPropertyName = "TenKH";
-            //dataGrid_TTKH.Columns[2].DataPropertyName = "DiaChi";
-            //dataGrid_TTKH.Columns[3].DataPropertyName = "Sdt";
-
-            if (dataGrid_TTKH.DataSource != null)
+        private void Home_KH_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn rời khỏi", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                lbMaKH.Text = dataGrid_TTKH.Rows[0].Cells[0].Value.ToString();
-                lbTenKH.Text = dataGrid_TTKH.Rows[0].Cells[1].Value.ToString();
-                lbDiaChi.Text = dataGrid_TTKH.Rows[0].Cells[2].Value.ToString();
-                lbSDT.Text = dataGrid_TTKH.Rows[0].Cells[3].Value.ToString();
+                
+                DangNhap dn = new DangNhap();
+                dn.Closed += (s, args) => this.Close();
+                dn.Show();
             }
-
-            
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

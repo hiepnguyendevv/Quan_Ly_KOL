@@ -44,7 +44,7 @@ namespace QuanLyTk
             this.label6 = new System.Windows.Forms.Label();
             this.date_lich = new System.Windows.Forms.DateTimePicker();
             this.check_XN = new System.Windows.Forms.CheckBox();
-            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.btnBooking = new System.Windows.Forms.Button();
             this.lbKOL = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -200,18 +200,18 @@ namespace QuanLyTk
             this.check_XN.UseVisualStyleBackColor = true;
             this.check_XN.CheckedChanged += new System.EventHandler(this.check_XN_CheckedChanged);
             // 
-            // btnThanhToan
+            // btnBooking
             // 
-            this.btnThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThanhToan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan.Location = new System.Drawing.Point(226, 315);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(106, 36);
-            this.btnThanhToan.TabIndex = 16;
-            this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.UseVisualStyleBackColor = false;
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
+            this.btnBooking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBooking.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
+            this.btnBooking.Location = new System.Drawing.Point(226, 315);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(106, 36);
+            this.btnBooking.TabIndex = 16;
+            this.btnBooking.Text = "Booking";
+            this.btnBooking.UseVisualStyleBackColor = false;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // lbKOL
             // 
@@ -222,7 +222,6 @@ namespace QuanLyTk
             this.lbKOL.Size = new System.Drawing.Size(40, 20);
             this.lbKOL.TabIndex = 18;
             this.lbKOL.Text = "Tên:";
-            this.lbKOL.Click += new System.EventHandler(this.label5_Click);
             // 
             // label7
             // 
@@ -241,7 +240,7 @@ namespace QuanLyTk
             this.ClientSize = new System.Drawing.Size(564, 363);
             this.Controls.Add(this.lbKOL);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnThanhToan);
+            this.Controls.Add(this.btnBooking);
             this.Controls.Add(this.check_XN);
             this.Controls.Add(this.date_lich);
             this.Controls.Add(this.lbGia);
@@ -267,22 +266,22 @@ namespace QuanLyTk
 
         #endregion
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label lbName;
         public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Label lbGioiTinh;
-        public System.Windows.Forms.Label lbNgaySinh;
         public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label lbSdt;
         public System.Windows.Forms.Label label8;
-        public System.Windows.Forms.Label lbDiaChi;
         private System.Windows.Forms.Label lb;
         public System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Label lbGia;
         public System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker date_lich;
         private System.Windows.Forms.CheckBox check_XN;
-        private System.Windows.Forms.Button btnThanhToan;
+        private System.Windows.Forms.Button btnBooking;
         public System.Windows.Forms.Label lbKOL;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Label lbGioiTinh;
+        private System.Windows.Forms.Label lbNgaySinh;
+        private System.Windows.Forms.Label lbSdt;
+        private System.Windows.Forms.Label lbDiaChi;
+        private System.Windows.Forms.Label lbGia;
     }
 }

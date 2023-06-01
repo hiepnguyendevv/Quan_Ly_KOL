@@ -42,41 +42,44 @@ namespace QuanLyTk
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
+            FormTT_KOL tt_kol = new FormTT_KOL();
 
+            FormTT_KOL.instance.lbMa.Text = dataGridView_DsKOL.Rows[index].Cells[0].Value.ToString();
+            FormTT_KOL.instance.lbTenKOL.Text = dataGridView_DsKOL.Rows[index].Cells[1].Value.ToString();
+            FormTT_KOL.instance.lbGt.Text = dataGridView_DsKOL.Rows[index].Cells[2].Value.ToString();
+            FormTT_KOL.instance.lbNs.Text = dataGridView_DsKOL.Rows[index].Cells[3].Value.ToString();
+            FormTT_KOL.instance.lbDc.Text = dataGridView_DsKOL.Rows[index].Cells[4].Value.ToString();
+            FormTT_KOL.instance.lbSoDt.Text = dataGridView_DsKOL.Rows[index].Cells[5].Value.ToString();
+            FormTT_KOL.instance.lbCoc.Text = dataGridView_DsKOL.Rows[index].Cells[6].Value.ToString();
+            tt_kol.Show();
         }
 
         private void dataGridView_DsKOL_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            FormTT_KOL formTT_KOL = new FormTT_KOL();
-            formTT_KOL.lbKOL.Text = dataGridView_DsKOL.Rows[index].Cells[0].Value.ToString();
-            formTT_KOL.lbName.Text = dataGridView_DsKOL.Rows[index].Cells[1].Value.ToString();
-            formTT_KOL.lbGioiTinh.Text = dataGridView_DsKOL.Rows[index].Cells[2].Value.ToString();
-            formTT_KOL.lbNgaySinh.Text = dataGridView_DsKOL.Rows[index].Cells[3].Value.ToString();
-            formTT_KOL.lbDiaChi.Text = dataGridView_DsKOL.Rows[index].Cells[4].Value.ToString();
-            formTT_KOL.lbSdt.Text = dataGridView_DsKOL.Rows[index].Cells[5].Value.ToString();
-            formTT_KOL.lbGia.Text = dataGridView_DsKOL.Rows[index].Cells[6].Value.ToString();
-            formTT_KOL.Show();
+            FormTT_KOL tt_kol = new FormTT_KOL();
+
+            FormTT_KOL.instance.lbMa.Text = dataGridView_DsKOL.Rows[index].Cells[0].Value.ToString();
+            FormTT_KOL.instance.lbTenKOL.Text = dataGridView_DsKOL.Rows[index].Cells[1].Value.ToString();
+            FormTT_KOL.instance.lbGt.Text = dataGridView_DsKOL.Rows[index].Cells[2].Value.ToString();
+            FormTT_KOL.instance.lbNs.Text = dataGridView_DsKOL.Rows[index].Cells[3].Value.ToString();
+            FormTT_KOL.instance.lbDc.Text = dataGridView_DsKOL.Rows[index].Cells[4].Value.ToString();
+            FormTT_KOL.instance.lbSoDt.Text = dataGridView_DsKOL.Rows[index].Cells[5].Value.ToString();
+            FormTT_KOL.instance.lbCoc.Text = dataGridView_DsKOL.Rows[index].Cells[6].Value.ToString();
+            tt_kol.Show();
         }
 
-        private void btnThongTin_Click(object sender, EventArgs e)
-        {
-            FormTT_KOL formTT_KOL = new FormTT_KOL();
-            formTT_KOL.lbName.Text = dataGridView_DsKOL.Rows[index].Cells[1].Value.ToString();
-            formTT_KOL.lbGioiTinh.Text = dataGridView_DsKOL.Rows[index].Cells[2].Value.ToString();
-            formTT_KOL.lbNgaySinh.Text = dataGridView_DsKOL.Rows[index].Cells[3].Value.ToString();
-            formTT_KOL.lbDiaChi.Text = dataGridView_DsKOL.Rows[index].Cells[4].Value.ToString();
-            formTT_KOL.lbSdt.Text = dataGridView_DsKOL.Rows[index].Cells[5].Value.ToString();
-            formTT_KOL.lbGia.Text = dataGridView_DsKOL.Rows[index].Cells[6].Value.ToString();
-
-            formTT_KOL.Show();
-
-        }
+      
 
         private void dataGridView_DsKOL_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             index = dataGridView_DsKOL.CurrentCell.RowIndex;
             btnThongTin.Enabled = true;
             btnBooking.Enabled = true;
+
+        }
+
+        private void btnThongTin_Click(object sender, EventArgs e)
+        {
 
         }
     }
